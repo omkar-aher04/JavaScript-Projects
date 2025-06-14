@@ -1,0 +1,103 @@
+body{
+background: linear-gradient(135deg, #99c6fd 0%, #eef1f8 40%, #c97cff 100%);
+height: auto;
+font-family: "Playwrite HU", cursive;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    width: 80%;
+    margin: auto;
+    margin-top: 9%;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .3);
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 15px;
+}
+h1{
+    color: #41079d;
+    text-shadow: 0 3px 5px rgba(223, 173, 112, 0.962);
+    font-family: "Playwrite HU", cursive;
+}
+
+    
+         .btn-grad {
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            box-shadow: 0 0 20px #c5c3c3;
+            border-radius: 50px;
+            display: block;
+            border: none;
+                color :#41079d;
+                font-weight:800;
+                font-size:1vw;
+                background-color: transparent;
+                font-family: "Playwrite HU", cursive;
+                
+          }
+
+          .btn-grad:hover {
+            background-position: right center; 
+            transform: scale(1.1);
+       color: #9f1bcf;
+            text-decoration: none;
+          }
+         
+.result-joke{
+    
+    border-radius: 30px;
+    height: 110px;
+    width: 320px;
+    line-height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid; */
+    padding: 2%;
+    background-color: transparent;
+    box-shadow: 0 0 4px rgb(162, 147, 170);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight : 600;
+    font-size: 20px;
+    
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+        padding: 10px;
+        
+    }
+
+    .main {
+        width: 90%;
+        padding: 20px;
+        margin-top: 40%;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .result-joke {
+        font-size: 18px;
+        margin-top: 20px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .btn-grad {
+        font-size: 18px;
+        padding: 12px 20px;
+        width: 100%;
+        max-width: 300px;
+    }
+}

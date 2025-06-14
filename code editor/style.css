@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#userInput {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+#editor {
+  height: 50vh;
+  width: 100%;
+}
+
+#run-btn {
+  padding: 10px 20px;
+  background: #1e1e1e;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+iframe {
+  flex: 1;
+  width: 100%;
+  border: none;
+  margin-top: 8px;
+}

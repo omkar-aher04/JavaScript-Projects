@@ -1,0 +1,129 @@
+#header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.text {
+    background :linear-gradient(to right, #33789d 0%, #a23da5  51%, #ebc109  100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+input{
+    height: 40px;
+    width: 350px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    padding: 20px;
+}
+.btn {
+  background-image: linear-gradient(to right, #3c4ed8 0%, #d885d2 51%, #9819a6 100%);
+  margin-left: 10px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  border: none;
+  color: rgb(12, 39, 62);
+  font-weight: 700;
+  font-size: 1vw;
+  height: 40px;
+  width: 120px;
+  display: inline;
+  
+}
+
+.btn:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #41079d;
+  text-decoration: none;
+}
+.resultdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+.img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+.imgContainer{
+    height: 280px;
+    width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.desc{
+    text-align: center;
+    padding: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+.imgContainer:hover img {
+  transform: scale(1.05);
+}
+.imgContainer:hover .desc {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.loadMore {
+      background-color: #008cba;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    display: none;
+}
+
+
+.loader {
+  width: fit-content;
+  font-size: 40px;
+  line-height: 1.5;
+  font-family: system-ui,sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #0000;
+  -webkit-text-stroke: 1px #000;
+  background:
+    radial-gradient(1.13em at 50% 1.6em,#000 99%,#0000 101%) calc(50% - 1.6em) 0/3.2em 100% text,
+    radial-gradient(1.13em at 50% -0.8em,#0000 99%,#000 101%) 50% .8em/3.2em 100% repeat-x  text;
+  animation: l9 2s linear infinite;
+  margin: 20px auto;
+  padding: 10px 20px;
+  margin-top: 2px;
+  padding-top: 1px;
+}
+.loader:before {
+  content: "Loading";
+}
+@keyframes l9 {
+  to {background-position: calc(50% + 1.6em) 0,calc(50% + 3.2em) .8em}
+}
+
+  @media screen and (max-width: 768px) {
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+    .btn{
+        font-size: large;
+    }
+ }

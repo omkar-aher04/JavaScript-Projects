@@ -1,0 +1,68 @@
+body {
+  background-color: #e2ebf0;
+  margin: 0%;
+  padding: 0%;
+  
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  position:static;
+}
+
+h2 {
+  margin-left: 2rem;
+}
+.addNotes {
+  margin-right: 5rem;
+  height: 50px;
+  margin-top: 10px;
+  width: 140px;
+  text-align: center;
+  font-weight: 900;
+  background-color: rgba(88, 87, 87, 0.326);
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 0 10px #ef97e8, 0 0 20px #ef97e8, 0 0 20px #fff inset;
+}
+.addNotes:hover {
+  box-shadow: 0 0 10px #ef97e8, 0 0 20px #ef97e8, 0 0 20px #fff inset;
+  background-color: #d0c1c194;
+}
+.notes {
+  height: auto;
+  scroll-behavior: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  overflow-y: hidden;
+}
+.snippet {
+  border-radius: 5px;
+  padding: 10px;
+  padding-right: 20px;
+  width: 150px;
+  height: 200px;
+  overflow: auto;
+  background-color: rgb(255, 167, 181);
+  box-shadow: 0 0 15px;
+  position: relative;
+}
+.close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    color: red;
+  }
+  .textArea{
+    outline: none;         
+  border: none;  
+  background: transparent;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+}
