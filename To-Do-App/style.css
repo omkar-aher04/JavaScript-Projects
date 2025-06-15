@@ -1,105 +1,111 @@
-body{
-     background-color: #2e2e2e;
-     padding: 0%;
-     margin: 0%;
+body {
+  background-color: #2e2e2e;
+  padding: 0%;
+  margin: 0%;
 }
 #left {
-    height: 100vh;
-    width: 25%;
-    background-color:  #171717;
-    color: white;
-    backdrop-filter: blur(40px); /* ✅ correct way to blur the background only */
-    -webkit-backdrop-filter: blur(20px); /* Safari support */
-     /* or absolute/fixed based on layout */
-    z-index: 1; /* ensure it's above background, but below important content */
-    border-radius: 10px; /* optional: smooth corners */
-    padding-left: 20px;
-    padding-top: 30px;
+  height: 100vh;
+  width: 30%;
+  background-color: #171717;
+  color: white;
+  backdrop-filter: blur(40px); /* ✅ correct way to blur the background only */
+  -webkit-backdrop-filter: blur(20px); /* Safari support */
+  /* or absolute/fixed based on layout */
+  z-index: 1; /* ensure it's above background, but below important content */
+  border-radius: 10px; /* optional: smooth corners */
+  padding-left: 20px;
+  padding-top: 49px;
+  transform: translateX(0); /* visible */
+  transition: transform 0.3s ease-in-out;
+  z-index: 100;
 }
 
-#wrapper{
-    display: flex;
-    color: white;
-  height: 100vh; 
-  overflow: hidden; 
+#wrapper {
+  display: flex;
+  color: white;
+  height: 100vh;
+  overflow: hidden;
+  /* width: 100vh; */
 }
-#right{
-    height: 100vh;
-    width: 70%;
-  }
-.components{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1px;
-    width: 95%;
+#right {
+  height: 100vh;
+  width: 70%;
 }
-.component-box{
-    display: flex;
-    height: 50px;
-    width: 130px;
-    align-items: last baseline;
-    margin-bottom: 0%;
-    margin-top: 12px;
-    padding-bottom: 8px;
-    padding-left: 13px;
-    border-radius: 10px;
-    background-color:  #2e2e2e;
-    z-index: 1;
+.components {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1px;
+  width: 80%;
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
 }
-.lists{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+.component-box {
+  display: flex;
+  height: 50px;
+  width: 130px;
+  align-items: last baseline;
+  margin-bottom: 0%;
+  margin-top: 12px;
+  padding-bottom: 8px;
+  padding-left: 13px;
+  border-radius: 10px;
+  background-color: #2e2e2e;
+  z-index: 1;
+}
+.lists {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 .lists h4 {
-    margin: 6px;
-    cursor: pointer;
+  margin: 6px;
+  cursor: pointer;
 }
-.lists i{
-    margin-right: 9px ;
+.lists i {
+  margin-right: 9px;
 }
-.add-list{
+.add-list {
   position: absolute;
-    float: right;
-    top: 85%;
-    right: 20px;
-    height: 30px;
-    width: 90px;
-   text-align: center;
-   color: white;
-   background-color: #dc4c3e;
-   border-radius: 5px;
-   border: none;
+  float: right;
+  top: 85%;
+  right: 20px;
+  height: 30px;
+  width: 90px;
+  text-align: center;
+  color: white;
+  background-color: #dc4c3e;
+  border-radius: 5px;
+  border: none;
 }
 
-.fa-magnifying-glass{
-    position: absolute;
-    left: 30px;
-    top: 35px;
-    
+.fa-magnifying-glass {
+  position: absolute;
+  left: 30px;
+  top: 55px;
 }
-.search{
-    position: relative;
-    padding-left:40px;
-    background-color:  rgba(53, 53, 55, 0.126);
-    width: 90%;
-    height: 30px;
-    border-radius: 50px;
-    margin-right: 15px;
-    outline: none;
-    border: none;
-    color:white;
-  }
-  .addToDo{
+.search {
+  position: relative;
+  padding-left: 40px;
+  background-color: rgba(53, 53, 55, 0.126);
+  width: 90%;
+  height: 30px;
+  border-radius: 50px;
+  margin-right: 15px;
+  outline: none;
+  border: none;
+  color: white;
+}
+.addToDo {
   margin-left: 88%;
 }
-.to-do{
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
+.to-do {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
 }
-
 
 .parent p:empty:before {
   content: attr(data-placeholder);
@@ -113,66 +119,66 @@ body{
   min-height: 20px;
   margin: 10px;
 }
-.parent{
-    margin-left: 40px;
-    border: 1px solid black;
-    width: 60%;
-    border-radius: 10px;
+.parent {
+  margin-left: 40px;
+  border: 1px solid black;
+  width: 60%;
+  border-radius: 10px;
 }
 .parent .desc {
   outline: none;
   min-height: 20px;
   margin: 10px;
 }
-.addBtn{
-    float: right;
-    height: 30px;
-    width: 90px;
-   position: relative;
-   right: 20px;
-   bottom: 19px;
-   text-align: center;
-   color: white;
-   background-color: #dc4c3e;
-   border-radius: 5px;
-   border: none;
+.addBtn {
+  float: right;
+  height: 30px;
+  width: 90px;
+  position: relative;
+  right: 20px;
+  bottom: 19px;
+  text-align: center;
+  color: white;
+  background-color: #dc4c3e;
+  border-radius: 5px;
+  border: none;
 }
-.task-item{
-    display: flex;
-   height: auto;
-   margin-left: 10px;
+.task-item {
+  display: flex;
+  height: auto;
+  margin-left: 10px;
 }
 .task-checkbox {
-    appearance: none;
-    -webkit-appearance: none;
-    min-width: 20px;
-    height: 20px;
-    border: 2px solid #999;
-    border-radius: 50%;
-    background-color: white;
-    cursor: pointer;
-    position: relative;
-    transition: all 0.2s ease;
-    margin-top: 18px;
-    margin-right: 8px;
+  appearance: none;
+  -webkit-appearance: none;
+  min-width: 20px;
+  height: 20px;
+  border: 2px solid #999;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+  margin-top: 18px;
+  margin-right: 8px;
 }
 
 /* Checkmark */
 .task-checkbox:hover {
-    background-color: #4CAF50; /* green when checked */
-    border-color: #4CAF50;
+  background-color: #4caf50; /* green when checked */
+  border-color: #4caf50;
 }
 
 .task-checkbox:checked::after {
-    content: '';
-    position: absolute;
-    top: 1px;
-    left: 4px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
 .deleted {
   position: fixed;
@@ -188,6 +194,14 @@ body{
   pointer-events: none; /* Prevent any accidental clicks */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   animation: fadeInOut 2s ease-in-out;
+}
+.fa-bars{
+  position: fixed;
+  font-size: 24px;
+  z-index: 1000;
+  display: block;
+  left: 20px;
+  top: 10px;
 }
 
 @keyframes fadeInOut {
@@ -206,5 +220,24 @@ body{
   100% {
     opacity: 0;
     transform: translate(-50%, -40%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #left {
+    display: none;
+  }
+  #right {
+    width: 100%;
+  }
+  .parent {
+    width: 35vh;
+  }
+  .task-item {
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+  .fa-bars{
+    display: none;
   }
 }

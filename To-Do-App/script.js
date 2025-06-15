@@ -1,5 +1,17 @@
 const addToDo = document.querySelector(".addToDo");
 const Todo = document.querySelector(".To-do");
+const left = document.querySelector("#left");
+const hamburger = document.querySelector(".fa-bars");
+let isOpen = true;
+hamburger.addEventListener("click",(e)=>{
+  if (isOpen) {
+    left.style.transform = "translateX(-100%)";  // hide
+    isOpen = false;
+  } else {
+    left.style.transform = "translateX(0)";      // show
+    isOpen = true;
+  }
+});
 
 addToDo.addEventListener("click", addtask);
 
